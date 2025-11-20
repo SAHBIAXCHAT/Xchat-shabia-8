@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Green Next Button</title>
+
+  <style>
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+      background:#f2f2f2;
+      font-family:Arial;
+    }
+
+    .btn-next{
+      padding:12px 25px;
+      background:#2ecc71;
+      border:none;
+      color:white;
+      font-size:18px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.2s;
+    }
+
+    .btn-next:hover{
+      background:#27ae60;
+      transform:scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <button id="nextBtn" class="btn-next">Next ➜</button>
+
+  <script>
+    // Yahan apna link daalein:
+    const nextUrl = "https://google.com"; // <-- Apna link yahan likhein
+
+    document.getElementById("nextBtn").addEventListener("click", function(){
+      window.location.href = nextUrl; // Next link open ho jayega
+    });
+  </script>
+
+</body>
+</html>
